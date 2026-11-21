@@ -5,7 +5,7 @@ let package = Package(
     name: "JavaScriptCore",
     products: [
         // The Swift API.
-        .library(name: "JSC", targets: ["JSC"]),
+        .library(name: "JavaScriptCoreSwift", targets: ["JavaScriptCoreSwift"]),
         // The engine's C API alone.
         .library(name: "CJavaScriptCore", targets: ["CJavaScriptCore"]),
     ],
@@ -13,7 +13,7 @@ let package = Package(
         // The engine itself: WebKit's JSCOnly port as Scripts/build-engine.sh
         // installs it, or the system framework on Apple's platforms.
         .systemLibrary(name: "CJavaScriptCore", pkgConfig: "javascriptcore"),
-        .target(name: "JSC", dependencies: ["CJavaScriptCore"]),
-        .testTarget(name: "JSCTests", dependencies: ["JSC"]),
+        .target(name: "JavaScriptCoreSwift", dependencies: ["CJavaScriptCore"]),
+        .testTarget(name: "JavaScriptCoreSwiftTests", dependencies: ["JavaScriptCoreSwift"]),
     ]
 )

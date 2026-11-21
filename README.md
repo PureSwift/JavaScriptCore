@@ -6,7 +6,7 @@ The package has two parts:
 
 | Product | What it is |
 | --- | --- |
-| `JSC` | A Swift API over the engine: contexts, values and functions made from closures |
+| `JavaScriptCoreSwift` | A Swift API over the engine: contexts, values and functions made from closures |
 | `CJavaScriptCore` | The engine's C API as a module, for code that wants it directly |
 
 On Linux the engine is WebKit's `JSCOnly` port, which is JavaScriptCore built
@@ -16,7 +16,7 @@ JavaScriptCore framework.
 ## Usage
 
 ```swift
-import JSC
+import JavaScriptCoreSwift
 
 let context = JSContext()
 
