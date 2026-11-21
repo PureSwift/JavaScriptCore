@@ -1,5 +1,5 @@
 import Testing
-import JSC
+import JavaScriptCoreSwift
 
 @Suite struct ContextTests {
     @Test func evaluatesAScript() throws {
