@@ -1,0 +1,4 @@
+module CJavaScriptCore [system] {
+    header "shim.h"
+    export *
+}
